@@ -6,6 +6,23 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar Opened="AppBar_Opened" Margin="0,0,10,0" Background="#FF3A2A2A" RequestedTheme="Dark" Height="82">
+            <AppBarButton HorizontalAlignment="Left" Icon="Home" Label="HOME" VerticalAlignment="Top" ClickMode="Press">
+                <Grid RenderTransformOrigin="0.5,0.5" Height="196" Width="684">
+                    <Grid.RenderTransform>
+                        <CompositeTransform ScaleY="-1"/>
+                    </Grid.RenderTransform>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal"/>
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal"/>
+                </Grid>
+            </AppBarButton>
+        </AppBar>
+    </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -20,11 +37,13 @@
             <ColumnDefinition Width="168*"/>
             <ColumnDefinition Width="164*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="224,33,0,0" Grid.Row="4" TextWrapping="Wrap" Text="** Add to Order **" VerticalAlignment="Top" FontSize="32"/>
-        <TextBlock HorizontalAlignment="Left" Margin="207,33,0,0" Grid.Row="4" TextWrapping="Wrap" Text="** Submit Order **" VerticalAlignment="Top" FontSize="32" Grid.ColumnSpan="2" Grid.Column="1" SelectionChanged="TextBlock_SelectionChanged"/>
         <Image HorizontalAlignment="Left" Height="42" Margin="0,10,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.49,0.48" Source="Assets/SmallSquareLogo.png" Stretch="None"/>
         <GridView Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="336" Height="84" Header="Special Requests :" FontSize="32"/>
         <GridView Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="328" Height="84" Header="Order Items :" FontSize="32" SelectionChanged="GridView_SelectionChanged"/>
+        <ListView HorizontalAlignment="Left" Height="430" Margin="10,10,0,0" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" Width="682" Foreground="#FF3E0101" Background="#FF590202" SelectionChanged="ListView_SelectionChanged"/>
+        <ListView Grid.Column="2" HorizontalAlignment="Left" Height="366" Grid.Row="3" VerticalAlignment="Top" Width="328" Background="#FF47033E"/>
+        <Button Content="** Add to Order **" HorizontalAlignment="Left" Height="114" Margin="-3" Grid.Row="4" VerticalAlignment="Top" Width="708"/>
+        <Button Grid.ColumnSpan="2" Content="** Submit Order **" Grid.Column="1" HorizontalAlignment="Left" Height="114" Margin="-3" Grid.Row="4" VerticalAlignment="Top" Width="670" Click="Button_Click"/>
 
     </Grid>
 </Page>

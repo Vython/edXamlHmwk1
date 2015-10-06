@@ -26,5 +26,9 @@ namespace RestaurantManager.UniversalWindows
         {
             this.InitializeComponent();
         }
+        private void AppBar_Opened(object sender, object e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
     }
 }

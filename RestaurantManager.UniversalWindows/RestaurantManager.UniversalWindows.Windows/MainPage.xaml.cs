@@ -35,5 +35,10 @@ namespace RestaurantManager.UniversalWindows
         {
             this.Frame.Navigate(typeof(BlankPage1), null);
         }
+
+        private void AppBar_Opened(object sender, object e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
     }
 }

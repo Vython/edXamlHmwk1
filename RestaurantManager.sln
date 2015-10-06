@@ -9,6 +9,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RestaurantManager.Universal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.UniversalWindows.Windows", "RestaurantManager.UniversalWindows\RestaurantManager.UniversalWindows.Windows\RestaurantManager.UniversalWindows.Windows.csproj", "{6D5B7F76-163A-45B4-9A4F-F1BCAB6A99AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManager.Models", "RestaurantManager.Models\RestaurantManager.Models.csproj", "{A4A24217-231E-434B-8FA8-A945E1F387DB}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RestaurantManager.UniversalWindows\RestaurantManager.UniversalWindows.Shared\RestaurantManager.UniversalWindows.Shared.projitems*{6d5b7f76-163a-45b4-9a4f-f1bcab6a99aa}*SharedItemsImports = 4
@@ -49,6 +51,16 @@ Global
 		{6D5B7F76-163A-45B4-9A4F-F1BCAB6A99AA}.Release|x86.ActiveCfg = Release|x86
 		{6D5B7F76-163A-45B4-9A4F-F1BCAB6A99AA}.Release|x86.Build.0 = Release|x86
 		{6D5B7F76-163A-45B4-9A4F-F1BCAB6A99AA}.Release|x86.Deploy.0 = Release|x86
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{A4A24217-231E-434B-8FA8-A945E1F387DB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +68,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5D4D8319-AAD8-48C5-AF3E-2081A75B8D14} = {CBC628A8-7CFC-4C7F-8202-7467164D2CAC}
 		{6D5B7F76-163A-45B4-9A4F-F1BCAB6A99AA} = {CBC628A8-7CFC-4C7F-8202-7467164D2CAC}
+		{A4A24217-231E-434B-8FA8-A945E1F387DB} = {CBC628A8-7CFC-4C7F-8202-7467164D2CAC}
 	EndGlobalSection
 EndGlobal

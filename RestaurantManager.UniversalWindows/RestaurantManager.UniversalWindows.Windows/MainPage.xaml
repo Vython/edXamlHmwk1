@@ -6,6 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar Opened="AppBar_Opened" RequestedTheme="Dark" Background="Black" Foreground="#FF037189" Height="85">
+            <AppBarButton HorizontalAlignment="Left" Label="HOME" VerticalAlignment="Top" ClickMode="Press" Icon="Home">
+                <Grid RenderTransformOrigin="0.5,0.5" Height="196" Width="684">
+                    <Grid.RenderTransform>
+                        <CompositeTransform ScaleY="-1"/>
+                    </Grid.RenderTransform>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal"/>
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal"/>
+                </Grid>
+            </AppBarButton>
+        </AppBar>
+
+    </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="768" VerticalAlignment="Bottom">
         <Grid.ColumnDefinitions>
@@ -17,13 +35,14 @@
             <RowDefinition Height="49*"/>
             <RowDefinition Height="94*"/>
         </Grid.RowDefinitions>
+
         <TextBlock HorizontalAlignment="Left" Margin="496,156,0,0" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Top" Height="68" Width="434" FontSize="44" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="573,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Top" FontSize="25" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="573,144,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Top" FontSize="25" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="211,187,0,0" Grid.Row="2" TextWrapping="Wrap" Text="** Go to Order View **" VerticalAlignment="Top" FontSize="31" Width="463"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="252,187,0,0" Grid.Row="2" TextWrapping="Wrap" Text="** Submit Order **" VerticalAlignment="Top" FontSize="31"/>
         <Button HorizontalAlignment="Left" Margin="-3" Grid.Row="2" VerticalAlignment="Top" Height="382" Width="690" ClickMode="Press" Click="Button_Click"/>
         <Button Content="" HorizontalAlignment="Left" Margin="-3,-3,-5,-3" Grid.Row="2" VerticalAlignment="Top" Height="382" Width="690" Grid.Column="1" Click="Button_Click_1"/>
-        <Image HorizontalAlignment="Left" Height="280" VerticalAlignment="Top" Width="295" Source="Assets/LargeSquareLogo.png" Grid.ColumnSpan="2" Margin="542,-84,0,0"/>
+        <Image HorizontalAlignment="Left" Height="280" VerticalAlignment="Top" Width="295" Source="Assets/LargeSquareLogo.png" Grid.ColumnSpan="2" Margin="530,135,0,0" Grid.RowSpan="3"/>
 
     </Grid>
 </Page>

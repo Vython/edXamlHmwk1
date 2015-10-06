@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using RestaurantManager.Models;
 
 // La plantilla de elemento Página en blanco está documentada en http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,7 +27,10 @@ namespace RestaurantManager.UniversalWindows
         {
             this.InitializeComponent();
         }
-
+        private void AppBar_Opened(object sender, object e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
@@ -35,6 +39,16 @@ namespace RestaurantManager.UniversalWindows
         private void GridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }
